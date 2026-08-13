@@ -1,0 +1,36 @@
+appId: dev.dive.desktop
+productName: Dive
+copyright: Copyright © 2026 Dive contributors
+asar: false
+npmRebuild: true
+afterPack: scripts/after-pack.cjs
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**
+  - package.json
+mac:
+  category: public.app-category.developer-tools
+  icon: build/icon.icns
+  target:
+    - dmg
+    - zip
+  artifactName: Dive-${version}-${arch}.${ext}
+win:
+  icon: build/icon.ico
+  target:
+    - nsis
+  artifactName: Dive-${version}-${arch}.${ext}
+linux:
+  icon: build/icon.png
+  category: Development
+  target:
+    - AppImage
+    - deb
+  artifactName: Dive-${version}-${arch}.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
