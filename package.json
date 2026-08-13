@@ -6,7 +6,11 @@
   "type": "module",
   "main": "dist/main.js",
   "license": "MIT",
-  "author": "Dive contributors",
+  "author": {
+    "name": "Dive contributors",
+    "email": "dandandujie@users.noreply.github.com"
+  },
+  "desktopName": "Dive.desktop",
   "homepage": "https://github.com/dandandujie/Dive",
   "repository": {
     "type": "git",

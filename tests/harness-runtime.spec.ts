@@ -67,7 +67,7 @@ describe('startHarness', () => {
       '/electron',
       [
         '--expose-internals',
-        expect.stringMatching(/@deepseek-ai\/dsh\/lib\/bin\.js$/u),
+        expect.stringMatching(/@deepseek-ai[\\/]dsh[\\/]lib[\\/]bin\.js$/u),
         'web',
         '--port',
         '0',
